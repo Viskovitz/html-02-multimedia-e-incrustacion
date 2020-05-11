@@ -5,9 +5,86 @@
     <title></title>
   </head>
   <body>
-    <h1>Imágenes en HTML</h1>
-    <p><a href="https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML#Anchura_y_altura">Voy por aquí</a></p>
-    <img src="images/grand_tour.jpg"
-      alt="Póster de la serie de imágenes de la Nasa sobre planetas del sistema solar">
+    <h1>Multimedia e incrustación</h1>
+
+      <h2>Imágenes</h2>
+
+        <p><a href="https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML#Anchura_y_altura" target="_blank">Voy por aquí</a></p>
+
+        <figure>
+          <img src="images/grand_tour.jpg"
+            alt="Póster de la serie de imágenes de la Nasa sobre planetas del sistema solar"
+            width="400"
+            height="600">
+
+            <figcaption>Imagen de cabecera de la serie de posters de la Nasa sobre planetas del sistema solar</figcaption>
+        </figure>
+
+      <h2>Audio y vídeo</h2>
+
+        <p>
+          <video controls width="400" height="400" poster="images/poster.png">
+            <source src="video/rabbit320.webm" type="video/webm">
+            <source src="video/rabbit320.mp4" type="video/mp4">
+            <track kind="subtitles" src="video/subtitles_en.vtt" srclang="en">
+            <p>Tu navegador no soporta HTML5 vídeo. Aquí está el <a href="rabbit320.webm">enlace del vídeo</a></p>
+          </video>
+        </p>
+
+        <p>
+          <audio controls>
+            <source src="sounds/viper.mp3" type="audio/mp3">
+            <source src="sounds/viper.ogg" type="audio/ogg">
+            <p>Tu navegador no soporta HTML5 audio. Aquí está el <a href="sounds/viper.mp3">enlace al audio</a></p>
+          </audio>
+        </p>
+
+        <h2>Incrustaciones (iframe)</h2>
+
+        <p>
+          <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/oUJ4L4kmbHw"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </p>
+
+        <p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12713.91813007733!2d-3.6116504500000004!3d37.1888381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1589188446811!5m2!1ses!2ses"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0">
+           </iframe>
+        </p>
+
+        <p>
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-3.8455581665039067%2C37.03325468997236%2C-3.3607864379882817%2C37.32130128357807&amp;layer=mapnik"
+            width="600"
+            height="450"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+            style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=12/37.1774/-3.6032">Ver mapa más grande</a></small>
+        </p>
+
+        <p>
+          <iframe
+            src="https://developer.mozilla.org/en-US/docs/Glossary"
+            width="100%"
+            height="500"
+            frameborder="0"
+            allowfullscreen
+            sandbox>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Glossary">Fallback link for browsers that don't support iframes</a></p>
+          </iframe>
+        </p>
   </body>
 </html>
